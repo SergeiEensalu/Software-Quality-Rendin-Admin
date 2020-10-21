@@ -1,15 +1,14 @@
 import React from "react";
-import Form from "./Form";
-import Navigation from "./Navigation";
+import {NavLink} from "react-router-dom";
 
-const Header = ({ history, handleSubmit }) => {
-  return (
-    <div>
-      <h1>SnapShot</h1>
-      <Form history={history} handleSubmit={handleSubmit} />
-      <Navigation />
-    </div>
-  );
+const Header = () => {
+    return (
+        <nav className="main-nav">
+            <ul>
+                <li><NavLink to="/payment">Payment</NavLink></li>
+                <li><NavLink to="/settings">Settings</NavLink></li>
+            </ul>
+        </nav>    );
 };
 
 export default Header;

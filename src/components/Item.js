@@ -1,13 +1,13 @@
 import React from "react";
-import Container from "./Container";
+import Payment from "./Payment";
+import Settings from "./Settings";
 
-const Item = ({ searchTerm }) => {
-  return (
-    <div>
-      <h2>{searchTerm} Pictures</h2>
-      <Container searchTerm={searchTerm} />
-    </div>
-  );
+const Item = ({searchTerm}) => {
+    return (
+        <div>
+            {(searchTerm === "payment") ? <Payment/> : <Settings/>}
+        </div>
+    );
 };
 
 export default Item;
