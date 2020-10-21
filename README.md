@@ -1,6 +1,9 @@
-# software_quality
+# software quality project
 
-npm install
+#### npm install
 
 
-npm start
+#### npm start
+
+
+location: localhost:3000
