@@ -1,6 +1,6 @@
 # software_quality
 
-npm istall
+npm install
 
 
 npm start
