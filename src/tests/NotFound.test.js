@@ -1,11 +1,10 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Header from '../components/Item';
+import Header from '../components/NotFound';
 
-test('test Payment component', () => {
+test('test NotFound component', () => {
 
-    // test('payment test', () => {
-    //     const wrapper = mount(<Header />);
-    //     expect(wrapper).toContainHTML;
-    // });
+        // const wrapper = mount(<h2>Page Not Found</h2>);
+        // expect(wrapper).toContainHTML;
+
 });

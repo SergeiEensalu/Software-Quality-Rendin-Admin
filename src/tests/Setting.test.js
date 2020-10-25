@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Header from '../components/Item';
+import Settings from '../components/Settings';
 
-test('test Payment component', () => {
+test('test Settings component', () => {
 
-    // test('payment test', () => {
-    //     const wrapper = mount(<Header />);
+    // test('settings test', () => {
+    //     const wrapper = mount(<Settings />);
     //     expect(wrapper).toContainHTML;
     // });
 });

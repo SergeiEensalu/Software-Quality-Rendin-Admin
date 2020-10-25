@@ -1,11 +1,10 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Header from '../components/Item';
+import Payment from '../components/Payment';
 
-test('test Item component', () => {
+test('test Payment component', () => {
 
-    // test('item test', () => {
-    //     const wrapper = mount(<Header />);
-    //     expect(wrapper).toContainHTML;
-    // });
+    // const wrapper = mount(<Payment />);
+    // expect(wrapper).toContainHTML;
+
 });
