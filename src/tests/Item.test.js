@@ -1,11 +1,12 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Header from '../components/Header';
+import { create } from "react-test-renderer";
+import Item from '../components/Item';
 
-test('test Header component', () => {
-
-    // test('header test', () => {
-    //     const wrapper = mount(<Header />);
-    //     expect(wrapper).toContainHTML;
-    // });
+describe("Item component", () => {
+    test("snapshot test", () => {
+        const item = create(<Item />);
+        expect(item.toJSON()).toMatchSnapshot();
+    });
 });
+
