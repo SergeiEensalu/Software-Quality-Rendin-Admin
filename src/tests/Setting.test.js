@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Settings from '../components/Settings';
+import { create } from "react-test-renderer";
 
-test('test Settings component', () => {
-
-    // test('settings test', () => {
-    //     const wrapper = mount(<Settings />);
-    //     expect(wrapper).toContainHTML;
-    // });
+describe("Settings component", () => {
+    test("snapshot test", () => {
+        const settings = create(<Settings />);
+        expect(settings.toJSON()).toMatchSnapshot();
+    });
 });
